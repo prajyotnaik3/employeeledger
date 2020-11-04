@@ -9,5 +9,5 @@ create database employeerepository;
 2. Create a user named springuser.
 create user 'springuser'@'%' identified by 'ThePassword';
 3. Grant permissions to springuser.
-grant all on db_example.* to 'springuser'@'%';
+grant all on employeerepository.* to 'springuser'@'%';
 
