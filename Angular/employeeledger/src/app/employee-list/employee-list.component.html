@@ -13,6 +13,7 @@
             <td>{{ employee.employeeCode }}</td>
             <td>{{ employee.name }}</td>
             <td>{{ employee.designation }}</td>
+            <td><a (click)="deleteEmployee(employee.employeeCode)" class="btn btn-info">Delete</a></td>
           </tr>
         </tbody>
       </table>
