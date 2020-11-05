@@ -9,12 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeFormComponent } from './employee-form/employee-form.component';
 import { EmployeeService } from '../service/employee.service';
+import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
     EmployeeFormComponent,
+    EmployeeEditComponent,
   ],
   imports: [
     BrowserModule,

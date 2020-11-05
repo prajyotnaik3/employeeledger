@@ -53,6 +53,7 @@ public class EmployeeController {
 	//Delete an employee
 	@DeleteMapping(value = "/deleteEmployees/{employeeCode}")
 	public ResponseEntity<?> deleteEmployee(@PathVariable Integer employeeCode){
+		//System.out.println(employeeCode);
 		return employeeRepository.findById(employeeCode).map(employee -> {
 		employeeRepository.delete(employee);
 		return ResponseEntity.ok().build();
@@ -64,6 +65,7 @@ public class EmployeeController {
 	//Update an employee
 	@PutMapping(value = "/updateEmployees/{employeeCode}")
 	public ResponseEntity<Employee> updateEmployee(@PathVariable Integer employeeCode, @RequestBody Employee newEmployee){
+		System.out.println(employeeCode);
 		return employeeRepository.findById(employeeCode).map(employee -> {
 			employee.setName(newEmployee.getName());
 			employee.setDesignation(newEmployee.getDesignation());

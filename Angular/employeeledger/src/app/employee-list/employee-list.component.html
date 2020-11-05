@@ -6,6 +6,7 @@
             <th scope="col">Employee Code</th>
             <th scope="col">Name</th>
             <th scope="col">Designation</th>
+            <th scope="col">Modify</th>
           </tr>
         </thead>
         <tbody>
@@ -13,7 +14,9 @@
             <td>{{ employee.employeeCode }}</td>
             <td>{{ employee.name }}</td>
             <td>{{ employee.designation }}</td>
-            <td><a (click)="deleteEmployee(employee.employeeCode)" class="btn btn-info">Delete</a></td>
+            <td><a (click)="deleteEmployee(employee.employeeCode)" class="btn btn-info">Delete</a>
+                <a routerLink="/updateEmployee" class="btn btn-info" (click)="saveEmployeeForUpdate(employee)">Update</a>
+            </td>
           </tr>
         </tbody>
       </table>

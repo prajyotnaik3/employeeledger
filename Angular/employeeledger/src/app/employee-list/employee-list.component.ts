@@ -28,4 +28,9 @@ export class EmployeeListComponent implements OnInit {
     });
   }
 
+  saveEmployeeForUpdate(emp: Employee){
+    console.log(emp.employeeCode);
+    EmployeeService.updateEmp = emp;
+    //this.employeeService.setEmployeeForUpdate(emp);
+  }
 }
