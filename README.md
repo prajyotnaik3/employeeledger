@@ -24,7 +24,7 @@ II. To run the Project, follow following steps:
 
         mvnw spring-boot:run
         
-3. Launch the angular frontend.
+3. Launch the angular frontend by running following commands in another command prompt.
 
    (i) Change directory:
         
