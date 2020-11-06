@@ -1,4 +1,4 @@
-# Employee Ledger Application in Java with Angular frontend.
+# Employee Ledger Application in Java with Angular frontend (Using REST API).
 
 This project illustrates CRUD operations on an Employee entity using mySQL database for storing of data and a frontend created using Angular.
 
