@@ -20,7 +20,7 @@ All permissions are granted so that relations can be created if they dont exist 
 II. To run the Project, follow following steps:
 1. Start mySQL server, if not already running.
 
-2. Launch the Java Project, by running following command from command prompt (From project directory). This will start our backend.
+2. Launch the Java Project, by running following command from command prompt (from project directory). This will start our backend.
 
         mvnw spring-boot:run
         
